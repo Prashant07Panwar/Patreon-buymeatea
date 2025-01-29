@@ -57,7 +57,8 @@ const authoptions =  NextAuth({
         session.user.name = dbUser.username
         return session
       },
-    } 
+    },
+    secret: process.env.NEXTAUTH_SECRET 
   })
 
   export { authoptions as GET, authoptions as POST}
