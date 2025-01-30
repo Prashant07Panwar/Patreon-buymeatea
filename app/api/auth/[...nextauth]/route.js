@@ -58,7 +58,7 @@ const authoptions =  NextAuth({
         return session
       },
     },
-    secret: process.env.NEXTAUTH_SECRET 
+    secret: process.env.AUTH_SECRET 
   })
 
   export { authoptions as GET, authoptions as POST}
