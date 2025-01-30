@@ -16,7 +16,6 @@ const authoptions =  NextAuth({
       GitHubProvider({
         clientId: process.env.GITHUB_ID,
         clientSecret: process.env.GITHUB_SECRET,
-        callbackUrl: "/api/auth/callback/github"
       }),
     //   AppleProvider({
     //     clientId: process.env.APPLE_ID,
