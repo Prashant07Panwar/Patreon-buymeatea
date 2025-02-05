@@ -15,7 +15,7 @@ const authoptions =  NextAuth({
       // OAuth authentication providers...
       GitHubProvider({
         clientId: process.env.GITHUB_ID,
-        clientSecret: process.env.GITHUB_SECRET
+        clientSecret: process.env.GITHUB_SECRET,
       }),
     //   AppleProvider({
     //     clientId: process.env.APPLE_ID,
