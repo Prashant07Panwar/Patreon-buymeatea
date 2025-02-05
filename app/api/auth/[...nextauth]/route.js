@@ -15,7 +15,7 @@ const authoptions =  NextAuth({
       // OAuth authentication providers...
       GitHubProvider({
         clientId: process.env.GITHUB_ID,
-        clientSecret: process.env.GITHUB_SECRET,
+        clientSecret: process.env.GITHUB_SECRET
       }),
     //   AppleProvider({
     //     clientId: process.env.APPLE_ID,
@@ -57,7 +57,8 @@ const authoptions =  NextAuth({
         session.user.name = dbUser.username
         return session
       },
-    }
+    },
+    secret: process.env.NEXTAUTH_secret 
   })
 
   export { authoptions as GET, authoptions as POST}
