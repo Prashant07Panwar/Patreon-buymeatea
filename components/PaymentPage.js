@@ -1,15 +1,13 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import Script from 'next/script'
-import { useSession } from 'next-auth/react'
 import { initiate, fetchuser, fetchpayments } from '@/actions/useractions'
 import { useSearchParams } from 'next/navigation'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Bounce } from 'react-toastify';
 import { useRouter } from 'next/navigation'
-import { notFound } from "next/navigation"
-import { set } from 'mongoose'
+
 
 const PaymentPage = ({ username }) => {
     // const { data: session } = useSession()
