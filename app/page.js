@@ -6,11 +6,9 @@ export default function Home() {
       <div className="flex justify-center flex-col gap-4 items-center text-white h-[44vh] px-5 md:px-0 text-xs md:text-base  ">
         <div className="font-bold flex gap-6 md:gap-20 md:text-5xl justify-center items-center text-3xl">Get Me a Chai <span><img className="invertImg" src="/tea.gif" width={88} alt="" /></span></div>
         <p className="text-center md:text-left">
-          A crowdfunding platform for creators to fund their projects. 
-          
+          A crowdfunding platform for creators to fund their projects.    
         </p>
         <p className="text-center md:text-left">
-
           A place where your fans can buy you a chai. Unleash the power of your fans and get your projects funded.
         </p>
         <div>
